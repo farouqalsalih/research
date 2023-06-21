@@ -17,6 +17,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let t_mode = &args[2];
     let argdata = &args[3];
 
+
     let split: Vec<&str> = argdata.split(',').collect();
 
     let mut loop_code = match t_mode.as_str() {
@@ -59,6 +60,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     aws_utilities::save_serialized(serialized_access_data, bucket, accesses_path.as_str()).await;
     aws_utilities::save_serialized(serialized_result_data, bucket, hist_path.as_str()).await;
+
+
 
 
     Ok(())
