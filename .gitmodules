@@ -1,0 +1,14 @@
+[submodule "dace"]
+    path = dace
+    url = https://github.com/farouqalsalih/dace.git
+    branch = main
+
+[submodule "stack_alg_sim"]
+    path = stack_alg_sim
+    url = https://github.com/farouqalsalih/stack_alg_sim.git
+    branch = main
+
+[submodule "static_rd"]
+    path = static_rd
+    url = https://github.com/farouqalsalih/static_rd.git
+    branch = main
