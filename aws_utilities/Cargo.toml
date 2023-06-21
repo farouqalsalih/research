@@ -1,0 +1,22 @@
+[package]
+name = "aws_utilities"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv = "1.2.1"
+lru_stack = { path = "../stack_alg_sim/lru_stack" }
+lru_vec = { path = "../stack_alg_sim/lru_vec" }
+olken = { path = "../stack_alg_sim/olken" }
+test_cases = { path = "../stack_alg_sim/test_cases" }
+hist = { path = "../stack_alg_sim/hist" }
+rusoto_core = "0.47.0"
+rusoto_s3 = "0.47.0"
+tokio = { version = "1", features = ["full"] }
+lru_trait = { path = "../stack_alg_sim/lru_trait" }
+dace_tests = { path = "../dace/dace_tests" }
+static_rd = { path = "../static_rd" }
+list_serializable = { path = "../list_serializable"}
+
